@@ -88,6 +88,7 @@ public class IntList {
 //        }
 //        A.rest = B;
 //        return head;
+        if (A == null) return B;
         if (A.rest != null)
             A.rest = dcatenate(A.rest, B);
         else
