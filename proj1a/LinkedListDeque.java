@@ -1,4 +1,4 @@
-public class LinkedListDeque<T>{
+public class LinkedListDeque<T> {
     private class IntNode{
         public IntNode prev;
         public T item;
@@ -73,7 +73,7 @@ public class LinkedListDeque<T>{
         return last;
     }
 
-    public T getIterative(int index){
+    public T get(int index){
         if (size == 0 || index >= size){
             return null;
         }
@@ -107,7 +107,7 @@ public class LinkedListDeque<T>{
         size = 0;
 
         for (int i=0;i<other.size();i++){
-            addLast((T)other.getIterative(i));
+            addLast((T)other.get(i));
         }
 
     }

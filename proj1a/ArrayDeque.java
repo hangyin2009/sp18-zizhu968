@@ -66,5 +66,5 @@ public class ArrayDeque {
     public int get(int index){
         return items[index];
     }
-    
+
 }
